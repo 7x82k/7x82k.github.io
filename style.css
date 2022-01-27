@@ -40,7 +40,10 @@ body {
     width: 100%;
     position: absolute;
     overflow: scroll;
-    padding: 100px 0;
+    height: 550px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #giin-photo {
@@ -49,7 +52,7 @@ body {
     margin: auto;
     border-radius: 100%;
     border: 10px solid #111;
-    opacity: 0.7;
+    opacity: 0.9;
     /* use border radius generator */
 }
 
@@ -128,6 +131,14 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
+
+    #content {
+        height: auto;
+        top: 30px;
+        -ms-transform: none;
+        transform: none;
+        padding-bottom: 50px;
+    }
 
     #link-table {
         width: 100%;
