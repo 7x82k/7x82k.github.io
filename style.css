@@ -1,0 +1,167 @@
+body { 
+    margin:0px;
+    padding:0px;
+    background: #000;
+    font-family: Monospace, Helvetica, Arial, sans-serif;
+}
+
+#descx {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+#video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#video-container video {
+    position: fixed;
+    height: 100%;
+    justify-self: center;
+}
+
+#video-cover {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.75;
+}
+
+#content {
+    width: 100%;
+    position: absolute;
+    overflow: scroll;
+    padding: 100px 0;
+}
+
+#giin-photo {
+    display: block;
+    width: 200px;
+    margin: auto;
+    border-radius: 100%;
+    border: 10px solid #111;
+    opacity: 0.7;
+    /* use border radius generator */
+}
+
+#link-table {
+    width: 320px;
+    margin: 20px auto;
+    opacity: 0.9;
+    text-align: center;
+    cursor: default;
+}
+
+.music-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#featured {
+    width: 320px;
+    margin: auto;
+}
+
+#featured-title {
+    display: block;
+    border-bottom: 1px solid #333;
+    color: rgb(225, 254, 255);
+    text-transform: uppercase;
+    padding: 50px 2px 5px 2px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.featured-track-title {
+    color: rgb(228, 247, 234);
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 20px;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.featured-link {
+    margin-left: 2px;
+}
+
+.featured-track-description {
+    color: rgb(135, 156, 140);
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    margin-top: 5px;
+    line-height: 14px;
+}
+
+#bottom-bar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: #000;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#bottom-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #link-table {
+        width: 100%;
+    }
+
+    .music-link {
+        font-size: 30px;
+        padding: 0 12px;
+    }
+
+    #featured {
+        width: 100%; 
+    }
+
+    #featured-title {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+
+    .featured-track-title {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .featured-track-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 13px;
+    }
+
+    #bottom-bar {
+        font-size: 14px;
+    }
+
+}
