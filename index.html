@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Giin Music ❊ Singer & Songwriter</title>
@@ -9,106 +8,59 @@
 <meta http-equiv="content-style-type" content="text/css" />
 <meta http-equiv="content-language" content="en" />
 <meta name="author" content="giin" />
-<meta name="viewport" content="width=device-width, initial-scale=0.8" />
-<link rel="icon" type="image/png" href="t9.png" />
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="https://use.fontawesome.com/80ebc760bd.js"></script>
-
-<script>
-$('html').hide();
-$(document).ready(function(){
-$('#cover2').css('display', 'block');
-$('#nojs').css('display', 'none');
-$('#real').css('display', 'block');
-$('html').show();
-$('#cover2').delay(400).fadeOut(300);
-});
-</script>
-
-<style>
-
-#cloudcage { position:fixed; width:100%; top:-50px; left:0px; height:200px; z-index:100; background:left top repeat-x url('x7.png'); }
-
-#cloudcage2 { position:fixed; width:100%; top:-48px; left:0px; height:200px; z-index:90; background:left top repeat-x url('ct4.png');  }
-
-body { margin:0px; padding:0px; border:0px; background:#A785FF; }
-
-#descx { overflow:hidden; width:0px; height:0px; opacity:0px; z-index:0; position:absolute; top:0px; left:0px; font-size:1px; }
-
-#cover2 { margin:0px; padding:0px; position:absolute; height:100%; width:100%; background:#fff; z-index:99998; display:none; }
-
-#cover { margin:0px; padding:0px; position:absolute; height:100%; width:100%; background:#A785FF; z-index:99997; }
-
-#cage { margin:auto; width:429px; height:100%; }
-
-#cage2 { position:absolute; top:400px; top:calc(50% - 120px); width:429px; height:auto; }
-
-#border { width:429px; height:243px; display:block; background-image:url('001.png'); background-size:429px 243px; background-repeat:no-repeat; background-image:linear-gradient(transparent, transparent), url('002.svg'); overflow:hidden; }
-
-#icons { width:100%; height:10px; text-align:center; font-size:27px; line-height:27px; padding-top:15px; }
-
-a { text-decoration:none; color:#fff; margin-right:30px; margin-left:30px; font-family:arial; }
-
-#land { position:absolute; bottom:0px; left:0px; width:100%; height:60px; background:#8AC8FF; border-top:2px solid #000; z-index:99999; }
-
-#real, #nojs {}
-
-@media only screen and (max-width: 450px) { 
-
-#cage, #cage2, #border { width:90%; margin:auto; }
-#border { background-size:100% 100%; }
-a { margin-right:10px; margin-left:10px; font-size:22px; }
-
-}
-
-@media only screen and (max-height: 450px) {
-
-#cage, #cage2, #border { width:70%; margin:auto; }
-#border { background-size:100% 100%; }
-
-#cloudcage { position:fixed; width:100%; top:-90px; left:0px; height:200px; z-index:100; background:left top repeat-x url('x7.png'); }
-
-#cloudcage2 { position:fixed; width:100%; top:-88px; left:0px; height:200px; z-index:90; background:left top repeat-x url('ct4.png');  }
-
-}
-
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/t9.png" />
+<script type="text/javascript" src="script.js"></script>
 
 <body>
   
-<div id="descx">giin music official, gin music official, giintron music, giin singer, giin songwriter, giin musician, giin w&w, gin music, giin darren</div>
-<div id="cover2"></div>
-<div id="cover">
-<div id="cloudcage"></div>
-<div id="cloudcage2"></div>
-<div id="cage">
-<div id="cage2">
-<div id="border">
-</div>
-</div>
-</div>
-<div id="land">
-<div id="icons">
+<div id="descx">giin music official, gin music official, giintron music, giin singer, giin songwriter, giin musician, giin artist, giin w&w, gin music, giin darren</div>
 
-<div id="nojs" style="font-size:12px; letter-spacing:1px;">
-<a href="https://instagram.com/giintron" title="instagram">IG</a> 
-<a href="https://twitter.com/giintron" title="twitter">TW</a> 
-<a href="https://facebook.com/giintron" title="facebook">FB</a>
-<a href="https://open.spotify.com/artist/0sESxrO3UuQaknGbiuJ7tB?nd=1" title="spotify">SP</a>
-<a href="mailto:giintron4@gmail.com" title="contact">Mail</a>
+<div id="video-container">
+<video autoplay muted loop playsinline src="assets/loop.mp4"></video>
 </div>
 
-<div id="real">
-<a href="https://twitter.com/giintron" title="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-<a href="https://instagram.com/giintron" title="instagram"><i class="fa fa-camera" aria-hidden="true"></i></a>
-<a href="https://facebook.com/giintron" title="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-<a href="https://open.spotify.com/artist/0sESxrO3UuQaknGbiuJ7tB?nd=1" title="spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a>
-<a href="mailto:giintron4@gmail.com" title="contact"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-</div>
+<div id="video-cover"></div>
 
-</div>
-</div>
+<div id="content">
+
+    <img id="giin-photo" src="assets/giin.png" />
+
+    <div id="link-table">
+            <a class="music-link" href="https://open.spotify.com/artist/0sESxrO3UuQaknGbiuJ7tB?nd=1" title="Spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+            <a class="music-link" href="https://music.apple.com/nz/artist/giin/1373126590" title="Apple Music"><i class="fa fa-apple" aria-hidden="true"></i></a>
+            <a class="music-link" href="https://instagram.com/giintron" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="music-link" href="https://twitter.com/giintron" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="music-link" href="https://facebook.com/giintron" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="featured">
+        <div id="featured-title"><span id="date"></span> spotlight</div>
+
+        <a class="featured-track-title" href="https://electricfox.lnk.to/WindMeUp">
+            Wind Me Up - Hartshorn Ft. Giin
+            <span class="featured-link"><i class="fa fa-external-link" aria-hidden="true"></i></span>
+        </a>
+
+        <div class="featured-track-description">Check out Giin's new track with Hartshorn! Stream it free on Youtube or listen on your favorite streaming service.</div>
+
+        <a class="featured-track-title" href="https://www.youtube.com/watch?v=u0qgj_FREHE">
+            Long Way Down (Da Tweekaz Remix)
+            <span class="featured-link"><i class="fa fa-external-link" aria-hidden="true"></i></span>
+        </a>
+
+        <div class="featured-track-description">You've heard "Long Way Down" by Giin, Darren Styles, and W&W. Check out the amazing remix by Da Tweekaz. A free download link is included in the video description!</div>
+
+    </div>
+
+    <div id="bottom-bar">
+        <a href="mailto:giintron4@gmail.com" title="Email">
+            Contact <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+    </div>
+
 </div>
 
 </body>
