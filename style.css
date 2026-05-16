@@ -39,7 +39,8 @@ body {
 #content {
     width: 100%;
     position: absolute;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 550px;
     top: 50%;
     -ms-transform: translateY(-50%);
